@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário em HTML</title>
+  </head>
+  <body>
+    <form action="/enviar" method="post">
+        <fieldset> 
+            <legend>Cadastro de usuários</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome"> <br> <br>
+            <!-- Campo de Senha ( input type="password")-->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha"> <br> <br>
+            <!--Campo de email (input type="email")-->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            <br> <br>
+            <!--Campo de idade (input type="number")-->
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0" max="120">
+            <P>Gênero:</P>
+            <input type="radio" id="masc" name="genero " value="M">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="fem" name="genero" value="F">
+            <label for="fem">Feminino</label>]
+            
+            <P>Interesses:</P>
+            <input type="checkbox" id="html" name="interesse" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="interesse" value="CSS">
+            <label for="css">CSS</label> <br>
+            <!-- Área de texto -->
+             <label for="msg">Mensagem</label>
+             <textarea name="mensagem" id="msg" rows="4" cols="40" placeholder="Digite sua mensagem"></textarea> <br>
+             <!-- Lista Suspensa-->
+              <label for="cidade">Cidade:</label>
+              <select name="cidade" id="cidade">
+                <option value="belem">Belém</option>
+                <option value="ananindeua">Ananindeua</option>
+                <option value="maraba">Marabá</option>
+              </select> <br> 
+              <!-- Comando de botões (type="submit" type="reset" e etc.)-->
+              <button type="submit">Enviar</button>
+              <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+  </body>
+</html>
